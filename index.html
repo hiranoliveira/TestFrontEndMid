@@ -3,32 +3,73 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/assets/style.css" />
+		<link rel="stylesheet" href="./assets/style.css" />
 		<title>Test Front End Mid</title>
 	</head>
 	<body>
 		<main>
+			<h1>Front End Test - MDC Group</h1>
+			<h2>Hiran Oliveira - Front End Developer</h2>
 			<section class="section_1">
-				<h1 class="title">Test 1</h1>
-				<h2 class="subtitle">Manipulating the DOM with Javascript</h2>
+				<h2 class="title">Test 1</h1>
+				<h3 class="subtitle">Manipulating the DOM with Javascript</h2>
+				<div class="container">
+					<button class="btn" onclick="changeText()">CLICK ME</button>
+					<p class="text" id="textSec1">Default text</p>
+				</div>
 			</section>
 			<section class="section_2">
-				<h1 class="title">Test 2</h1>
-				<h2 class="subtitle">Responsive Layout</h2>
+				<h2 class="title">Test 2</h1>
+				<h3 class="subtitle">Responsive Layout</h2>
+				<div class="container">
+					<div class="item item_1">Item 1</div>
+					<div class="item item_2">Item 2</div>
+					<div class="item item_3">Item 3</div>
+				</div>
 			</section>
 			<section class="section_3">
-				<h1 class="title">Test 3</h1>
-				<h2 class="subtitle">Consuming an API</h2>
+				<h2 class="title">Test 3</h1>
+				<h3 class="subtitle">Consuming an API</h2>
+				<div class="container">
+					<div id="pokemonCard" class="pokemon_card">
+						<!-- Aqui o card do Pokémon será inserido dinamicamente -->
+					</div>
+					<button class="btn" onclick="getRandomPokemonCard()">
+						Get Random Pokémon
+					</button>
+				</div>
 			</section>
 			<section class="section_4">
-				<h1 class="title">Test 4</h1>
-				<h2 class="subtitle">Form Validation</h2>
-			</section>
-			<section class="section_5">
-				<h1 class="title">Test 5</h1>
-				<h2 class="subtitle">General Frontend Knowledge</h2>
+				<h2 class="title">Test 4</h1>
+				<h3 class="subtitle">Form Validation</h2>
+				<div class="container">
+					<h3 class="form_title">Contact Form</h2>
+					<form id="contactForm" class="contact_form">
+						<div class="fields">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" />
+						</div>
+
+						<div class="fields">
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" name="email" />
+						</div>
+
+						<div class="fields">
+							<label for="message">Message:</label>
+							<textarea
+							id="message"
+							name="message"
+							rows="4"
+							></textarea>
+						</div>
+
+						<button class="btn" type="submit">Submit</button>
+					</form>
+				</div>
 			</section>
 		</main>
-		<script src="/assets/main.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="./assets/main.js"></script>
 	</body>
 </html>

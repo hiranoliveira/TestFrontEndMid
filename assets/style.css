@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #d1e7f7;
+	padding: 2rem;
+	font-family: "Montserrat", sans-serif;
 }
 
 body main {
@@ -8,13 +18,111 @@ body main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 992px;
+	max-width: 500px;
 }
 
-main section {
+body main h2 {
+	margin: 16px 0;
+}
+
+body main section {
+	margin: 24px auto;
+	max-width: 100%;
 	width: 100%;
 	border: 1px solid #608ea5;
 	border-radius: 15px;
-	background-color: whitesmoke;
+	background-color: #ffffff;
 	padding: 48px;
+	-webkit-box-shadow: 15px 15px 5px -7px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 15px 15px 5px -7px rgba(0, 0, 0, 0.5);
+	box-shadow: 15px 15px 5px -7px rgba(0, 0, 0, 0.5);
+}
+
+body main section .title,
+body main section .subtitle {
+	text-align: center;
+}
+body main section .container {
+	margin: 16px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body main section .container .btn {
+	width: fit-content;
+	height: 40px;
+	margin: 24px auto;
+	padding: 0 24px;
+	background: transparent;
+	border: 1px solid #2b95e0;
+	border-radius: 5px;
+	color: #2b95e0;
+	transition: 0.3s;
+	cursor: pointer;
+}
+body main section .container .btn:hover {
+	border: 1px solid #10588b;
+	color: #10588b;
+}
+body main .section_2 .container {
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+body main .section_2 .container .item {
+	margin: 12px;
+	padding: 8px 24px;
+	color: #ffffff;
+	font-weight: 700;
+}
+body main .section_2 .container .item_1 {
+	background-color: #08a5ff;
+}
+body main .section_2 .container .item_2 {
+	background-color: #f79a23;
+}
+body main .section_2 .container .item_3 {
+	background-color: #003349;
+}
+
+body main .section_3 .container .pokemon_card_inner {
+	width: 220px;
+	border: 1px solid #2b95e0;
+	border-radius: 5px;
+	background-color: rgb(250, 252, 242);
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+body main .section_3 .container .pokemon_card_inner p {
+	margin: 4px auto;
+}
+
+body main .section_3 .container .pokemon_card .poke_name,
+body main .section_3 .container .pokemon_card p {
+	text-transform: capitalize;
+}
+
+body main .section_4 .container .contact_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+body main .section_4 .container .contact_form .fields {
+	display: flex;
+	flex-direction: column;
+	margin: 8px auto;
+	width: 100%;
+}
+
+@media (max-width: 992px) {
+	body main .section_2 .container {
+		flex-direction: column;
+	}
 }
