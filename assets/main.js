@@ -48,8 +48,10 @@ document
 		const nameInput = document.getElementById("name");
 		const emailInput = document.getElementById("email");
 		const messageInput = document.getElementById("message");
+		let success = document.getElementById("successField");
 
-		// Validate if fields are not empty
+		success.innerHTML = "";
+
 		if (!nameInput.value.trim()) {
 			displayError(nameInput, "Name is required");
 			return;
@@ -65,16 +67,14 @@ document
 			return;
 		}
 
-		// Validate e-mail format using a regular expression
 		const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		if (!emailPattern.test(emailInput.value)) {
 			displayError(emailInput, "Please enter a valid e-mail address");
 			return;
 		}
 
-		// If everything is valid, you can proceed with form submission here
-		// For this example, we'll just show an alert
-		alert("Form submitted successfully!");
+		success.innerHTML = "Form submitted successfully!";
+		// alert("Form submitted successfully!");
 	});
 
 function displayError(inputElement, errorMessage) {

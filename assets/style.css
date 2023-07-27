@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+h1,
+h2 {
+	width: 100%;
+}
+
 body {
 	background-color: #d1e7f7;
 	padding: 2rem;
@@ -113,6 +118,7 @@ body main .section_4 .container .contact_form {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 240px;
 }
 body main .section_4 .container .contact_form .fields {
 	display: flex;
@@ -124,5 +130,13 @@ body main .section_4 .container .contact_form .fields {
 @media (max-width: 992px) {
 	body main .section_2 .container {
 		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 20px;
 	}
 }
