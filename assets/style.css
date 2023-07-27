@@ -113,6 +113,10 @@ body main .section_3 .container .pokemon_card p {
 	text-transform: capitalize;
 }
 
+body main .section_3 .container .pokemon_card .poke_name {
+	text-align: center;
+}
+
 body main .section_4 .container .contact_form {
 	display: flex;
 	flex-direction: column;
